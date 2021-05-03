@@ -1,0 +1,72 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$fe-course-primary: mat-palette($mat-indigo);
+$fe-course-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$fe-course-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$fe-course-theme: mat-light-theme(
+  (
+    color: (
+      primary: $fe-course-primary,
+      accent: $fe-course-accent,
+      warn: $fe-course-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($fe-course-theme);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --text-color: #1f1c51;
+  --primary-color: #ff9100;
+  --background-color: #f7f7f7;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top right, #ff7300, #ffae00);
+  border: 0px solid transparent;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: #1f1c51;
+  border: 0px none #ffffff;
+  // border-radius: 50px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 11px;
+}

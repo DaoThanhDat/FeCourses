@@ -1,0 +1,125 @@
+// .nav {
+//   z-index: 999;
+//   width: 100%;
+//   padding: 0 10%;
+//   top: 0;
+//   left: 0;
+//   font-family: "Montserrat Alternates", sans-serif;
+//   font-weight: bolder;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   overflow: hidden;
+//   position: fixed;
+//   transition: 1s;
+//   .logo {
+//     background: transparent;
+//     height: 100%;
+//     position: relative;
+//     transition: 1s;
+//   }
+//   .tag {
+//     height: 100%;
+//     ul {
+//       height: 100%;
+//       position: relative;
+//       background-color: transparent !important;
+//       transition: 1s;
+//     }
+//   }
+//   .tools {
+//     display: flex;
+//     height: 100%;
+//     ul {
+//       background: transparent;
+//       li {
+//         a {
+//           color: black;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .navbar-inverse {
+//   background: #060a21 !important;
+//   a {
+//     color: #ffffff;
+//   }
+//   span {
+//     color: #ffffff;
+//   }
+// }
+// .ant-menu-horizontal {
+//   line-height: 46px;
+//   border: 0;
+//   border-bottom: none !important ;
+//   box-shadow: none;
+// }
+// .grid{
+//   width: 90%;
+//   max-width: 100%;
+//   margin: 0 auto;
+// }
+// .nav-bar {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//  .nav-left,.nav-right{
+//   height: 60px;
+//   line-height: 60px;
+//  }
+//   .logo{
+//     float: left;
+//     cursor: pointer;
+//     img {
+//       width: 100px;
+//       height: 50px;
+//     }
+//   }
+// }
+// .nav-item {
+//   list-style: none;
+//   li {
+//     display: inline-block;
+//     padding: 0 20px;
+//     a {
+//       font-weight: 500;
+//       font-size: 18px;
+//       padding: 3px;
+//       height: 60px;
+//       line-height: 60px;
+//       cursor: pointer;
+//       color: #ffffff;
+//     }
+//     .underline {
+//       position: relative;
+//       overflow: hidden;
+//       padding-bottom: 2px;
+//       margin-bottom: -2px;
+//       &:before {
+//         position: absolute;
+//         z-index: -1;
+//         content: "";
+//         left: 0;
+//         bottom: 0;
+//         width: 100%;
+//         height: 2px;
+//         transition: color 0.5s;
+//         background: linear-gradient(to top right, #41b782, #86d169);
+//         transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+//         transform: scaleX(0);
+//         transform-origin: 0 0;
+//       }
+//       &:hover {
+//         &:before {
+//           transform: scaleX(1);
+//           z-index: 2;
+//         }
+//       }
+//     }
+//   }
+// }
+// .flex {
+//   display: flex;
+// }

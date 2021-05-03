@@ -1,0 +1,38 @@
+<div class="user">
+  <div class="nav">
+    <div class="nav-header" (scroll)="onWindowScroll($event)">
+      <div class="grid">
+        <div class="flex nav-bar">
+          <div class="nav-left">
+            <div class="flex logo">
+              <a href="/">TrueCoder</a>
+            </div>
+            <div class="flex nav-menu">
+              <ul class="nav-item">
+                <li>
+                  <a routerLink="dashboard" class="nav-link">Dashboard</a>
+                </li>
+                <li>
+                  <a routerLink="#" class="nav-link">Course</a>
+                </li>
+                <li>
+                  <a routerLink="#" class="nav-link">Pricing</a>
+                </li>
+                <li><a routerLink="#" class="nav-link">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex nav-right">
+            <ul class="nav-item">
+              <li>
+                <a href="/login-register" class="nav-link active">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
